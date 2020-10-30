@@ -70,6 +70,7 @@ final class ViewController: UIViewController {
     }
 }
 
+//MARK: - UIImagePicker delegate
 extension ViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         if let image = info[.originalImage] as? UIImage {
